@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <video src="" id="myvideo"  autoplay></video>
+    <script type="text/javascript">
+      var video = document.getElementById('myvideo');
+      navigator.webkitGetUserMedia("video", success); 
+    
+      function success(stream){
+        video.src = window.webkitURL.createObjectURL(stream);
+      }
+    </script>
+  </body>
+</html>
