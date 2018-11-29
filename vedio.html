@@ -54,12 +54,21 @@ gtag('config', 'UA-33848682-1');
 div.select {
   margin: 0 0 1em 0;
 }
+ #webcam{
+    max-width: 100%;
+max-height: 100%;
+bottom: 0;
+left: 0;
+margin: auto;
+overflow: auto;
+position: fixed;
+right: 0;
+top: 0;
+ }
 </style>
 </head>
 <body>
 <div id="container">
-
-  <h1><a href="index.html" title="simpl.info home page">simpl.info</a> MediaStreamTrack.getSources</h1>
 
   <div class="select">
     <label for="audioSource">Audio source: </label><select id="audioSource"></select>
@@ -68,16 +77,9 @@ div.select {
     <label for="videoSource">Video source: </label><select id="videoSource"></select>
   </div>
 
-  <video muted autoplay></video>
+  <video id ="webcam" muted autoplay></video>
 
   <script src="main.js"></script>
-
-  <p>This demo requires Chrome 30 or later.</p>
-
-  <p>For more information, see <a href="https://www.html5rocks.com/en/tutorials/getusermedia/intro/" title="Media capture article by Eric Bidelman on HTML5 Rocks">Capturing Audio & Video in HTML5</a> on HTML5 Rocks.</p>
-
-<a href="main.js" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
-</div>
 <script src="../../js/lib/ga.js"></script>
 
     <!--Start of Tawk.to Script-->
